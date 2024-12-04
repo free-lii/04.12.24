@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма отправки данных</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet"> 
+<!-- Подключение JavaScript-файлов Bootstrap и jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjq6IbRdtsd/7cRGqc/XqJsDHbtzX5Lp1WyE+" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+    <nav>
+        <div style="text-align: center;">
+            <a href="index.html" >Главная</a>
+            <a href="novice.html">Новости для новичков</a>
+            <a href="experienced.html">Новости для бывалых</a>
+            <a href="form.html" class="active">Форма</a>
+            <a href="algorithmic_task.html" target="_self">Алгоритмическая задача</a>
+            <a href="passport.html">Паспорт</a>
+            <a href="order.html">Заказы</a>
+        </div>
+    </nav>
+
+    <div class="for_form">
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <p><input type="hidden" name="q" value="search"></p>
+            <h2>Форма для отправки данных об игровом опыте</h2>
+        
+            <label for="lastname">Фамилия:</label>
+            <input type="text" id="lastname" name="lastname" required value="Андреева">
+        
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required value="София">
+        
+            <label for="team">Желаемая команда:</label>
+            <select id="team" name="team" required>
+                <option value="Falcons">Falcons</option>
+                <option value="The Mongolz">The Mongolz</option>
+                <option value="BetBoom Team">BetBoom Team</option>
+            </select>
+
+            <div class="game_genres">
+                <label>Какой жанр игр предпочтительнее?</label>
+                <input type="radio" id="genre_rpg" name="game_genre" value="RPG" checked>
+                <label for="genre_rpg">RPG</label>
+                <input type="radio" id="genre_novel" name="game_genre" value="Novel">
+                <label for="genre_novel">NOVEL</label>
+                <input type="radio" id="genre_action" name="game_genre" value="Action">
+                <label for="genre_action">ACTION</label>
+            </div>
+        
+            <label for="subscribe">Подписаться на новости Киберсайта:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" checked>
+
+            <p> Отзыв о сайте:
+                <br>
+                <TEXTAREA cols=50 rows=4 name="textarea" >Отзыв</TEXTAREA>
+            </p>
+        
+        
+            <label for="phone">Мобильный телефон:</label>
+            <input type="number" id="phone" name="phone" required value="88005353535">
+        
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required value="sof@gmail.com">
+        
+            <label for="user_password">Пароль:</label>
+            <input type="password" id="user_password" name="user_password" required value="291222">
+        
+            <label for="send_date">Дата отправки сообщения:</label>
+            <input type="date" name="user_date" value="2024-11-06">
+        
+            <button type="submit">Отправить</button>
+            <button type="Reset">Обновить</button>
+        </form>
+    </div>
+
+    <img src="kkk.jpg" alt="изображение" class="image-center" width="400" height="250">
+
+    <div class="for_form">
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <p><input type="hidden" name="q" value="search"></p>
+            <h2>Форма для отправки личных контактных данных</h2>
+        
+            <label for="lastname">Фамилия:</label>
+            <input type="text" id="lastname" name="lastname" required value="Андреева">
+        
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required value="София">
+
+            <label for="team">Группа:</label>
+            <select id="team" name="team" required>
+                <option value="team1">1</option>
+                <option value="team2">2</option>
+                <option value="team3">3</option>
+            </select>
+        
+            <label for="phone">Мобильный телефон:</label>
+            <input type="number" id="phone" name="phone" required value="88005353535">
+        
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required value="sof@gmail.com">
+        
+            <label for="send_date">Дата отправки сообщения:</label>
+            <input type="date" name="user_date" value="2024-11-06">
+        
+            <button type="submit">Отправить</button>
+            <button type="Reset">Обновить</button>
+        </form>
+    </div>
+
+    <a href="index.html" class="return-link">Вернуться на главную страницу</a>
+
+</body>
+</html>
+

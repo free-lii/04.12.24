@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjq6IbRdtsd/7cRGqc/XqJsDHbtzX5Lp1WyE+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <div style="text-align: center;">
+            <a href="index.html">Главная</a>
+            <a href="novice.html">Новости для новичков</a>
+            <a href="experienced.html">Новости для бывалых</a>
+            <a href="form.html" target="_self">Форма</a>
+            <a href="algorithmic_task.html" target="_self">Алгоритмическая задача</a>
+            <a href="passport.html">Паспорт</a>
+            <a href="order.html" class="active">Заказы</a>
+        </div>
+    </nav>
+    <div class="card-body">
+        <h5 class='card-title text-center'>Магазин</h5>
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <input name="q" type="hidden" value="search">
+            <ul class="d-flex flex-row justify-content-around flex-wrap" id="node_for_insert">
+                <li>
+                    <img src="4080.jpg" alt="Товар 1" width="200">
+                    <h6>RTX4080</h6>
+                    <p>116 000 руб</p>
+                    <input type="number" class="quantity-input" name="RTX4080" min="1" placeholder="шт">
+                </li>
+                <li>
+                    <img src="4090.jpg" alt="Товар 2" width="200">
+                    <h6>RTX4090</h6>
+                    <p>138 745 руб</p>
+                    <input type="number" class="quantity-input" name="RTX4090" min="1" placeholder="шт">
+                </li>
+                <li>
+                    <img src="steam.jpg" alt="Товар 3" width="200">
+                    <h6>RTX4070</h6>
+                    <p>36 094 руб</p>
+                    <input type="number" class="quantity-input" name="RTX4070" min="1" placeholder="шт">
+                </li>
+                <li>
+                    <img src="steam deck.jpg" alt="Товар 4" width="200">
+                    <h6>Steam Deck</h6>
+                    <p>67 856 руб</p>
+                    <input type="number" class="quantity-input" name="Steam Deck" min="1" placeholder="шт">
+                </li>
+                <li>
+                    <img src="psp small.jpg" alt="Товар 5" width="200">
+                    <h6>M17 PSP</h6>
+                    <p>7 906 руб</p>
+                    <input type="number" class="quantity-input" name="M17 PSP" min="1" placeholder="шт">
+                </li>
+                <li>
+                    <img src="psp big.jpg" alt="Товар 6" width="200">
+                    <h6>M19 PSP</h6>
+                    <p>11 437 руб</p>
+                    <input type="number" class="quantity-input" name="M19 PSP" min="1" placeholder="шт">
+                </li>
+            </ul>
+            <input class="btn btn-primary" type="submit" value="В корзину" onclick="updateSearchQuery()">
+        </form>
+    </div>
+</div>
+
+<script src="api.js"></script>
+</body>
+</html>
+
+

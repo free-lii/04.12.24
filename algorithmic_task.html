@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка сцены</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
+    <!-- Подключение JavaScript-файлов Bootstrap и jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjq6IbRdtsd/7cRGqc/XqJsDHbtzX5Lp1WyE+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div style="text-align: center;">
+                <a href="index.html">Главная</a>
+                <a href="novice.html">Новости для новичков</a>
+                <a href="experienced.html">Новости для бывалых</a>
+                <a href="form.html" target="_self">Форма</a>
+                <a href="algorithmic_task.html" class="active">Алгоритмическая задача</a>
+                <a href="passport.html">Паспорт</a>
+                <a href="order.html">Заказы</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="content-table">
+            <h2>Проверка размера сцены</h2>
+            <p class="intro-text">Можно ли в квадратном зале площадью S поместить круглую сцену радиусом R так, чтобы от стены до сцены был проход не менее K?</p>
+
+            <label for="S">Введите площадь квадратного зала (S):</label>
+            <input type="number" id="S">
+
+            <label for="R">Введите радиус сцены (R):</label>
+            <input type="number" id="R">
+
+            <label for="K">Введите необходимую длину прохода (K):</label>
+            <input type="number" id="K">
+
+            <button onclick="checkStage()">Проверить</button>
+            <button onclick="sendData()">Отправить</button>
+
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="button">
+            <a href="index.html">Вернуться на главную страницу</a>
+        </div>
+    </div>
+
+    <form id="sendForm" action="https://www.bing.com/search?" method="GET" target="_blank" style="display:none;">
+        <input type="hidden" name="q" value="search">
+        <input type="hidden" name="formulation" value="Можно ли в квадратном зале площадью S поместить круглую сцену радиусом R так, чтобы от стены до сцены был проход не менее K?">
+        <input type="hidden" name="S" id="formS">
+        <input type="hidden" name="R" id="formR">
+        <input type="hidden" name="K" id="formK">
+        <input type="hidden" name="L" id="formL">
+        <input type="hidden" name="C" id="formC">
+        <input type="hidden" name="result" id="formResult">
+    </form>
+    
+</body>
+<script src="script2.js"></script>
+</html>
